@@ -297,30 +297,34 @@
 <div class="title_set">
 <h3>Join Us Now!</h3>
 </div>
-<form method="post">
+<form method="post" action="{{route('register')}}">
+  @csrf
 <div class="mb-3">
-<input type="email" class="form-control" id="email" name="email" placeholder="Email-Id">
-<label id='name-error' class='error' for='name'>&nbsp;</label>
+<input type="email" class="form-control" name="email" placeholder="Email-Id">
+<span>@error('email') {{$message}} @enderror</span>
 </div>
-<div class="mb-3">
+<!-- <div class="mb-3">
 <input type="email" class="form-control" id="email" name="email" placeholder="Confirm Email">
 <label id='email-error' class='error' for='email'>&nbsp;</label>
+</div> -->
+<div class="mb-3">
+<input type="text" class="form-control"  name="mobile" placeholder="Enter Mobile Number">
+<span>@error('mobile') {{$message}} @enderror</span>
+
 </div>
 <div class="mb-3">
-<input type="text" class="form-control" id="mobile" name="mobile" placeholder="Enter Mobile Number">
-<label id='mobile-error' class='error' for='mobile'>&nbsp;</label>
+<input type="password" class="form-control"  name="password" placeholder="Password">
+<span>@error('password') {{$message}} @enderror</span>
+
 </div>
 <div class="mb-3">
-<input type="password" class="form-control" id="password" name="password" placeholder="Password">
-<label id='mobile-error' class='error' for='mobile'>&nbsp;</label>
-</div>
-<div class="mb-3">
-<input type="text" class="form-control" id="referal_code" name="referal_code" placeholder="Referral Code">
-<label id='mobile-error' class='error' for='mobile'>&nbsp;</label>
+<input type="text" class="form-control"  name="referal_code" placeholder="Referral Code">
+<span>@error('referal_code') {{$message}} @enderror</span>
+
 </div>
 
 <div class="mb-3">
-<select name="course" id="" class="form-control">
+<select name="course"  class="form-control">
   <option selected>Select Course</option>
   <option value="option1">option1</option>
   <option value="option2">option2</option>
@@ -328,9 +332,11 @@
   <option value="option4">option4</option>
   <option value="option5">option5</option>
 </select>
+<span>@error('course') {{$message}} @enderror</span>
+
 </div>
-<div class="ser_btn">
-<button type="button" class="handle_btn" id="submitSupport"><span><i class="fas fa-long-arrow-alt-right"></i> Submit</span></button>
+<div >
+<button type="button" class="handle_btn"><span><i class="fas fa-long-arrow-alt-right"></i> Submit</span></button>
 </div>
 </form>
 </div>
