@@ -1,0 +1,97 @@
+@media (max-width: 1199px) {
+}
+@media (max-width: 991px) {
+}
+@media (max-width: 776px) {
+	.navbar-brand img {
+    	height: 47px;
+	}
+	.btn_menu{
+		margin-left: 0px;
+	}
+	.slider h2, .title_set h3, .contact_here .title_set h3 {
+		font-size: 30px;
+
+	}
+	.slider p span{
+		margin-bottom: 0px;
+	}
+	.slider h4 {
+		margin-bottom: 5px;
+	}
+	.own_btn {
+	    margin-top: 10px;
+	}
+	.process_mains, .sl_img{
+		margin-top: 15px;
+	}
+	.services_section {
+	    padding-top: 40px;
+	}
+	.padding_section {
+	    padding: 40px 0px;
+	}
+	.slider{
+		padding-top: 100px;
+	}
+	.services_inner .col {
+	    flex: inherit;
+	}
+	.contact_here {
+	    margin-left: 0px;
+	}
+	.partner_here img {
+	    margin-top: 30px;
+	    height: 41px;
+	}
+	footer .item {
+	    margin-top: 10px;
+	    margin-bottom: 20px;
+	    padding: 0px 25px;
+	}
+	.bg-dark .footer-bottom p{
+		text-align: center;
+	}
+	.nav-item{
+		margin-top: 15px;
+	}
+	.navbar .container{
+		padding: 0px;
+	}
+	.navbar{
+		padding: 15px 15px;
+		background: linear-gradient( 135deg , #ffffff 0%, #eaf5ff 100%) !important;
+	}
+	.f-item.link a{
+		width: 100%;
+		border-right: 0px solid #b1d8f9;
+		border-bottom: 1px solid #b1d8f9;
+	    padding: 5px 8px;
+	    padding: 9px 8px;
+    	display: block;
+	}
+	.address .col {
+	    float: none;
+	    width: 100%;
+	}
+	footer .default-padding {
+	    padding-top: 30px;
+	    padding-bottom: 0px;
+	}
+	.navbar-toggler {
+    	padding: 4px 6px;
+	}
+	.aa_herer{
+		width: 96%;
+		padding: 20px 25px !important;
+    	margin: auto;
+    	margin-bottom: 25px !important;
+    	margin-top: 0px !important;
+	}
+
+}
+.navbar-toggler:focus {
+    text-decoration: none;
+    outline: 0;
+    box-shadow: 0 0 0 0rem;
+}

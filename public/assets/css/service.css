@@ -1,0 +1,22 @@
+.navbar-default .navbar-nav > li > a{ color:#fff;}
+.navbar-default .navbar-nav > .active > a{color:#408cff;}
+.nav:not(.ms-rounded) li.active > a:before{content:none;}
+.title{position: relative; color: #FFF; text-shadow: 0 0 15px rgba(0,0,0,.7); background-repeat: no-repeat; background-position: 50% 0; background-size: cover; background-color: #3D3C42;}
+.title-name h1 {margin-bottom:.5em; padding-left:20px; padding-right:20px; font-size:60px; text-align:center; color:#FFF;}
+.title-name p{ font-size:20px !important; text-align:center; color:#FFF; padding-left:100px; padding-right:100px;}
+.content h2{ font-size:26px; font-weight:800;}
+.content h3{ font-size:21px; font-weight:800;}
+.content p{ font-size:16px;}
+.content .form-group{ position:relative;}
+.tenc-how-we-work-process-border {display: block;border-left: 1px dashed #2d2b37;position: absolute; top:5px;left: 0; width: 2px;height: 97%;}
+.tenc-how-we-work-process {position: relative; margin-bottom:30px;}
+.tenc-how-we-work-process-steps {margin-left: 60px;}
+.tenc-how-we-work-process-steps__item:after {content: '01'; position: absolute; display: block; font-size: 21px; font-weight: 600; color: #6831e4; top: 0; left: -30px;}
+.tenc-how-we-work-process-steps__item2:after{content: '02'; color:#fa357b;}
+.tenc-how-we-work-process-steps__item3:after{content: '03';}
+.tenc-how-we-work-process-steps__item:before{content: ""; position: absolute; display: block; font-size: 24px; font-size: 2.4rem; font-weight: 400; color: #6831e4; height: 4px; width: 4px; background: transparent; border: 5px solid #6831e4; border-radius: 50%; top: 5px; left: -64px;}
+.tenc-how-we-work-process-steps__item2:before{border: 5px solid #fa357b;}
+.container.content-half {padding-top: 25px;padding-bottom: 25px;}
+.process-section {background: #2b2d37;}
+#overlay{ padding-top:120px; padding-bottom:120px;}
+.contact-with .btn-lg{ margin-top:-20px !important;}
