@@ -4,11 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\Register;
+use App\Models\Course;
 
 class RegisterController extends Controller
 {
     public function index(){
-        return view('/home');
+        $course = Course::all();
+        return view('home',compact('course'));
+    }
+
+    public function test(){
+        return view('/test');
     }
     public function userRegister(Request $request){
         $request->validate([
@@ -16,7 +22,8 @@ class RegisterController extends Controller
             'mobile' => 'required',
             'password' => 'required',
             'referal_code' => 'required',
-            'course' => 'required'
+            'course' => 'required',
+          
         ]);
         $register = new Register();
         $register->email = $request->email;
@@ -25,5 +32,6 @@ class RegisterController extends Controller
         $register->ref_code = $request->referal_code;
         $register->course = $request->course;
         $register->save();
+        return 'ok Bro';
     }
 }

@@ -326,17 +326,15 @@
 <div class="mb-3">
 <select name="course"  class="form-control">
   <option selected>Select Course</option>
-  <option value="option1">option1</option>
-  <option value="option2">option2</option>
-  <option value="option3">option3</option>
-  <option value="option4">option4</option>
-  <option value="option5">option5</option>
+  @foreach($course as $course)
+  <option value="{{$course->id}}">{{$course->name}}</option>
+  @endforeach
 </select>
 <span>@error('course') {{$message}} @enderror</span>
 
 </div>
 <div >
-<button type="button" class="handle_btn"><span><i class="fas fa-long-arrow-alt-right"></i> Submit</span></button>
+<button type="submit" class="handle_btn"><span><i class="fas fa-long-arrow-alt-right"></i> Submit </span></button>
 </div>
 </form>
 </div>
@@ -475,13 +473,14 @@ responsive:{
 
 </script>
 
-<script src="js/wow.min.js"></script>
+<!-- <script src="js/wow.min.js"></script> -->
 
-<script src="js/main.js"></script>
-<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script>
-<script src="js/jquery.validate.js"></script>
-<script src="js/additional-methods.min.js"></script>
-<script>
+<!-- <script src="js/main.js"></script> -->
+<!-- <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/sweetalert/1.1.3/sweetalert.min.js"></script> -->
+
+<!-- <script src="js/jquery.validate.js"></script> -->
+<!-- <script src="js/additional-methods.min.js"></script> -->
+<!-- <script>
         var Form 			= $('#support');
         var btnName 		= $('#submitSupport').html();
         var loader      	= '<div class="lds-ellipsis"><div></div><div></div><div></div><div></div></div>';
@@ -574,6 +573,6 @@ responsive:{
                 });
             }
         });
-      </script>
+      </script> -->
 </body>
 </html>

@@ -13,6 +13,11 @@ use App\Http\Controllers\RegisterController;
 |
 */
 
-
+// Route::get('/',function(){
+//     return view('home');
+// });
 Route::get('/',[RegisterController::class,'index']);
-Route::post('/register',[RegisterController::class,'userRegister'])->name('register');
+Route::post('/',[RegisterController::class,'userRegister'])->name('register');
+
+Route::get('/test',[RegisterController::class,'test']);
+
