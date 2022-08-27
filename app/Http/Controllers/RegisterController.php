@@ -32,6 +32,8 @@ class RegisterController extends Controller
         $register->ref_code = $request->referal_code;
         $register->course = $request->course;
         $register->save();
-        return 'ok Bro';
+        $course = Course::find($request->course);
+     
+        return redirect($course->link);
     }
 }
